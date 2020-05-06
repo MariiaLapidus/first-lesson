@@ -1,0 +1,18 @@
+<p>
+  all-users works!
+</p>
+
+<!--<div *ngFor="let user of users">-->
+<!--    {{user | json}}-->
+<!--</div>-->
+
+<ion-card *ngFor="let user of users">
+    <img src="https://scontent.fiev25-1.fna.fbcdn.net/v/t1.0-9/s960x960/94612996_1843356429171958_9154284335392620544_o.jpg?_nc_cat=103&_nc_sid=110474&_nc_oc=AQn68zLkZINYLwq8NvByCtS_oNyXIKXWZRSPJ8myLBn6y6p0bAGw8OuTbG7Ytt3qzOA&_nc_ht=scontent.fiev25-1.fna&_nc_tp=7&oh=54373da9b7170a1a1f600ca4dffebf60&oe=5ED7BE0A" />
+    <ion-card-header>
+        <ion-card-subtitle>{{user.id}}</ion-card-subtitle>
+        <ion-card-title>{{user.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+       {{user.address | json}}
+    </ion-card-content>
+</ion-card>
