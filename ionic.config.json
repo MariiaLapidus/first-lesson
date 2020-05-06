@@ -1,0 +1,7 @@
+{
+  "name": "first lesson",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
